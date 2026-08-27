@@ -1482,9 +1482,8 @@ async function doForgotPassword() {
     const params = new URLSearchParams({ action: 'requestReset', email });
     const res  = await fetch(GAS_AUTH_URL, { method: 'POST', body: params });
     const data = await res.json();
-    if (data.success) {
-      // Always show success (prevents email enumeration)
-      showAuthSuccess('fp-success', '✓ If an account with that email exists, a reset link has been sent. Check your inbox — it expires in 15 minutes.');
+        if (data.success) {
+      showAuthSuccess('fp-success', '✓ A reset link has been sent to your email! Check your inbox — it expires in 15 minutes.');
       btn.textContent = 'Email sent ✓';
     } else {
       showAuthError('fp-error', data.error || 'Failed to send reset email. Please try again.');
