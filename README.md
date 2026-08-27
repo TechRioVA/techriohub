@@ -2,6 +2,10 @@
 
 A personal learning dashboard I built to track my own journey into automation and coding — part study tracker, part portfolio, part AI-assisted sandbox project.
 
+<p align="center">
+  <img src="./Screenshot_1%20TechRioVAHub.png" width="800" alt="TechRio Hub Preview">
+</p>
+
 ## About this project
 
 I'm an aspiring learner in automation and coding, and this was one of my first real dives into **vibe coding** — building something functional by describing what I want and iterating with the help of AI (Claude), rather than writing every line from deep prior expertise. TechRio Hub is the result: a full mini web app with user accounts, a personal progress tracker, and an embedded AI chat assistant, all running on a Google Apps Script backend with zero traditional server hosting.
